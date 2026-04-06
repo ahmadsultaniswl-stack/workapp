@@ -34,7 +34,7 @@ class ApiScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Error: ${controller.errorMessage.value}',
+                  'Errors: ${controller.errorMessage.value}',
                   style: const TextStyle(color: Colors.red),
                   textAlign: TextAlign.center,
                 ),
