@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'api_example_con.dart';
 
 class ApiScreen extends StatelessWidget {
+
   final ApiController controller = Get.put(ApiController());
 
   ApiScreen({super.key});

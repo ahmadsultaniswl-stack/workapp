@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:developer';
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
@@ -7,14 +8,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
-import 'package:workapp/app_routes.dart';
-import 'package:workapp/work_app/api/api_example_scr.dart';
-import 'package:workapp/work_app/list_types/advance_list.dart';
-import 'package:workapp/work_app/list_types/basic_list_view_with_divider.dart';
 import 'package:workapp/work_app/list_types/complete_example.dart';
-import 'package:workapp/work_app/list_types/interactive_list.dart';
-import 'package:workapp/work_app/list_types/multiple_widgets.dart';
-import 'package:workapp/work_app/splash/splash_view.dart';
+
+import 'app_routes.dart';
 import 'firebase_options.dart';
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
@@ -251,7 +247,8 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
 
       // this is home
-      //home: SplashView(),
+      // home: SharedPreferencesScr(),
+      home: CompleteListExample(),
       //home: ApiScreen(),
       initialRoute: AppRoutes.initialRoute,
       getPages: AppRoutes.page,

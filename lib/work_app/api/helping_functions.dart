@@ -1,4 +1,5 @@
 import 'dart:convert';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -7,7 +8,7 @@ class Functions {
   static sendJson({
     required Map<String, dynamic>? jsonMap,
     required String url,
-    required String method, // 'GET' or 'POST'
+    required String method, // this is use for 'GET' or 'POST' data from api
   }) async {
     var jsonData;
     var response;
